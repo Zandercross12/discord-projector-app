@@ -4,7 +4,7 @@ These discord bots were made with the intention of relaying audio between two vc
 
 # Getting Started
 
-To install, make sure you have node on your machine. Then install npm or pnpm.
+To install, make sure you have node installed on your machine. Then install npm or pnpm.
 After they are installed, make sure you run this command to install all the packages necessary for the project:
 
 `npm install`
@@ -25,8 +25,8 @@ This will set up their commands when they join your discord server. Once that is
 
 You will still need to figure out how to connect to your bot, likely through some kind of proxy.
 
-### DEFAULT-PORTS:
-App A - 3000
-App B - 3001 && Audio Relay Socket - 9000
-App C - 3002
-App D - 3003 && Audio Relay Socket - 9001
+### DEFAULT-PORTS (when ports aren't entered in environment variables):
+- App A - 3000
+- App B - 3001 && Audio Relay Socket - 9000
+- App C - 3002
+- App D - 3003 && Audio Relay Socket - 9001
