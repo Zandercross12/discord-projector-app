@@ -38,3 +38,12 @@ It'll look like that for each bot.
 - App B - 3001 && Audio Relay Socket - 9000
 - App C - 3002
 - App D - 3003 && Audio Relay Socket - 9001
+
+## Starting
+
+To start the projects, run:
+
+- `npm run startA` OR `pnpm run startA`
+- `npm run startB` OR `pnpm run startB`
+- `npm run startB` OR `pnpm run startC`
+- `npm run startB` OR `pnpm run startD`
