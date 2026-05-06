@@ -23,7 +23,15 @@ OR
 
 This will set up their commands when they join your discord server. Once that is done, you can start the discord bots. However, you aren't out of the woods just yet!
 
-You will still need to figure out how to connect to your bot, likely through some kind of proxy.
+You will still need to figure out how to connect to your bot, likely through some proxy. Then you can hook up the interactions to your bot in your bot settings:
+
+- General Information > Interactions Endpoint URL
+
+The URL should look something like this:
+
+`<URL>/interactions`
+
+It'll look like that for each bot.
 
 ### DEFAULT-PORTS (when ports aren't entered in environment variables):
 - App A - 3000
