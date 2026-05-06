@@ -40,6 +40,7 @@ client.login(process.env.RECEIVER_DISCORD_TOKEN_2);
 const app = express();
 // Get port, or default to 3003
 const PORT = process.env.RECEIVER_PORT_2 || 3003;
+const AUDIO_RELAY_PORT = process.env.AUDIO_RELAY_PORT_D || 9001;
 
 const SAMPLE_RATE = 48000;
 const CHANNELS = 2;
@@ -190,8 +191,8 @@ const server = net.createServer((socket) => {
   });
 });
 
-server.listen(9001, "127.0.0.1", () => {
-  console.log("Audio relay TCP server listening on port 9001");
+server.listen(AUDIO_RELAY_PORT, "127.0.0.1", () => {
+  console.log(`Audio relay TCP server listening on port ${AUDIO_RELAY_PORT}`);
 });
 
 /**

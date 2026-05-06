@@ -20,6 +20,7 @@ import net from "net";
 let relaySocket = null;
 let reconnectInterval = null;
 const RECONNECT_DELAY = 5000;
+const AUDIO_RELAY_PORT = process.env.AUDIO_RELAY_PORT_B || 9000;
 
 function connectToAppB() {
   if (relaySocket) {
@@ -29,7 +30,7 @@ function connectToAppB() {
 
   relaySocket = new net.Socket();
 
-  relaySocket.connect(9000, "127.0.0.1", () => {
+  relaySocket.connect(AUDIO_RELAY_PORT, "127.0.0.1", () => {
     console.log("Connected to App B relay server");
 
     if (reconnectInterval) {
